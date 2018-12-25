@@ -5,14 +5,15 @@
 
 MAIN PROC
     
-    MOV CX,5
+    MOV CX,9
     
     MOV AH,2
-    MOV DL,'*'
+    MOV DL,49
     INT 21H
     
     L1:
     INT 21H
+    INC DL
     LOOP L1
     
     
